@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @note_feature.type %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @note_feature.value %>
+</p>
+
+<p>
+  <strong>Text idx:</strong>
+  <%= @note_feature.text_idx %>
+</p>
+
+<p>
+  <strong>Progress note:</strong>
+  <%= @note_feature.progress_note_id %>
+</p>
+
+<%= link_to 'Edit', edit_note_feature_path(@note_feature) %> |
+<%= link_to 'Back', note_features_path %>

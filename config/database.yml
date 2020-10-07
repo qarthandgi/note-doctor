@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: notestation_dev
+  pool: 5
+  username: notestation
+  password: password1
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: notestation_test
+  pool: 5
+  username: notestation
+  password: password1

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Note Features</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Value</th>
+      <th>Text idx</th>
+      <th>Progress note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @note_features.each do |note_feature| %>
+      <tr>
+        <td><%= note_feature.type %></td>
+        <td><%= note_feature.value %></td>
+        <td><%= note_feature.text_idx %></td>
+        <td><%= note_feature.progress_note_id %></td>
+        <td><%= link_to 'Show', note_feature %></td>
+        <td><%= link_to 'Edit', edit_note_feature_path(note_feature) %></td>
+        <td><%= link_to 'Destroy', note_feature, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Note Feature', new_note_feature_path %>
